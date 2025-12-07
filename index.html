@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Deepika Seshaiah — Portfolio</title>
+  <meta name="description" content="Portfolio — Deepika Seshaiah. Product Manager (transitioning from QA). Case studies: TravelCoPilot, HireMate, SubSentry."/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#071428;--card:#0f1724;--muted:#98a1ad;--accent:#7dd3fc}
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,#071022,#071428);font-family:Inter,system-ui,Segoe UI,Roboto,Arial;color:#e9f4fb}
+    .wrap{max-width:1000px;margin:28px auto;padding:22px;border-radius:22px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));box-shadow:0 10px 30px rgba(2,6,23,0.6)}
+    header{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+    .avatar{width:72px;height:72px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:24px;background:linear-gradient(135deg,var(--accent),#60a5fa);color:#041526}
+    h1{margin:0;font-size:22px}
+    p.lead{margin:6px 0;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:18px;margin-top:18px}
+    @media (max-width:920px){.grid{grid-template-columns:1fr}}
+    .card{background:var(--card);padding:14px;border-radius:12px;border:1px solid rgba(255,255,255,0.02)}
+    .case-list{display:grid;gap:12px}
+    a.cta{display:inline-block;padding:8px 12px;border-radius:10px;text-decoration:none;background:var(--accent);color:#041526;font-weight:700}
+    a.link{color:var(--accent);text-decoration:underline}
+    footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="avatar">DS</div>
+      <div>
+        <h1>Deepika Seshaiah — Product Manager (transitioning from QA)</h1>
+        <p class="lead">7 years in Software Testing, Automation & Quality Engineering. I convert user problems into prioritized product outcomes, guided by data, rapid experimentation, and engineering-first execution.</p>
+      </div>
+      <div style="margin-left:auto;text-align:right;color:var(--muted)">
+        <div>Erode, India</div>
+        <div style="margin-top:6px">Open to PM roles — Remote / Hybrid</div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <section class="card">
+          <h2>Case Studies</h2>
+          <div class="case-list" style="margin-top:12px">
+            <article>
+              <h3><a class="link" href="travelcopilot.html">TravelCoPilot — AI Travel Planner</a></h3>
+              <p class="muted">Vision, UX flows, tech notes, Colab integration and prototypes. PM + AI orchestration example. (Deck + prototypes included.)</p>
+            </article>
+
+            <article>
+              <h3><a class="link" href="hiremate.html">HireMate — AI Mock Interview GTM</a></h3>
+              <p class="muted">GTM & pricing playbook, funnel strategy and 30/60/90 plan for a freemium → subscription product.</p>
+            </article>
+
+            <article>
+              <h3><a class="link" href="subsentry.html">SubSentry — Subscription Tracker</a></h3>
+              <p class="muted">PRD + UX flows for a subscription management app: onboarding, dashboard, retention metrics.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="card" style="margin-top:12px">
+          <h2>Download</h2>
+          <p class="muted">Full PDF pack (same folder):</p>
+          <ul class="muted">
+            <li><a class="link" href="files/TravelCoPilot_Full_Deck_DeepikaSeshaiah.pdf" target="_blank">TravelCoPilot (Full Deck)</a></li>
+            <li><a class="link" href="files/HireMate_GradedProject.pdf" target="_blank">HireMate (Gated Project)</a></li>
+            <li><a class="link" href="files/SubSentry_PRD_DeepikaSeshaiah.pdf" target="_blank">SubSentry PRD</a></li>
+          </ul>
+          <p style="margin-top:8px"><a class="cta" href="mailto:deepikaseshaiah94@gmail.com">Request full pack</a></p>
+        </section>
+      </main>
+
+      <aside>
+        <div class="card">
+          <h3>About</h3>
+          <p class="muted"><strong>Product Manager transitioning from a 7-year foundation in Software Testing, Automation, and Quality Engineering.</strong> Skilled in Python, API testing, Pytest, Selenium, product discovery, and shaping measurable roadmaps.</p>
+          <p style="margin-top:10px"><strong>Contact:</strong> <a class="link" href="mailto:deepikaseshaiah94@gmail.com">deepikaseshaiah94@gmail.com</a></p>
+        </div>
+      </aside>
+    </div>
+
+    <footer>© <span id="yr"></span> Deepika Seshaiah — Portfolio</footer>
+  </div>
+
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>

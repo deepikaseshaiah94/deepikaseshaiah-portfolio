@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>TravelCoPilot — Case Study — Deepika Seshaiah</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style> :root{--bg:#071428;--card:#0f1724;--muted:#98a1ad;--accent:#7dd3fc} html,body{margin:0;font-family:Inter,system-ui;color:#eaf6ff;background:linear-gradient(180deg,#071022,#071428)} .wrap{max-width:980px;margin:28px auto;padding:18px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01))} h1{margin:0} .muted{color:var(--muted)} .section{background:var(--card);padding:14px;border-radius:10px;margin-top:12px} a.link{color:var(--accent);text-decoration:underline} .meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px} .grid{display:grid;grid-template-columns:1fr 320px;gap:12px}@media(max-width:900px){.grid{grid-template-columns:1fr}}</style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="link" href="index.html">← Back to portfolio</a>
+    <h1>TravelCoPilot — AI Travel Planner</h1>
+    <div class="meta muted">Role: Product Lead (concept → PRD → prototype) • Timeline: 8 weeks • Artifacts: Deck + Figma prototypes.</div>
+
+    <section class="section">
+      <h2>Problem</h2>
+      <p class="muted">Travel planning is fragmented: users spend hours coordinating routes, budgets, and preferences across multiple tools. TravelCoPilot aims to provide a single assistant to plan, optimise and book multi-stop trips using AI orchestration.</p>
+
+      <h3 style="margin-top:10px">Target users</h3>
+      <ul class="muted">
+        <li>Frequent travelers who value time saving</li>
+        <li>Leisure planners who want curated itineraries</li>
+        <li>Budget-conscious travelers who require cost-aware plans</li>
+      </ul>
+
+      <h3 style="margin-top:10px">My contributions</h3>
+      <ul class="muted">
+        <li>Led product definition and roadmap, prioritized features using RICE.</li>
+        <li>Created user journeys, wireflows, and success metrics (time-to-plan, conversion, retention).</li>
+        <li>Defined technical orchestration for AI + 3rd-party APIs and documented Colab proof-of-concept.</li>
+        <li>Built prototype requirements and connected Figma links in the deck for stakeholder reviews.</li>
+      </ul>
+
+      <h3 style="margin-top:10px">Approach / Execution</h3>
+      <ol class="muted">
+        <li>Discovery: interviews, pain-point mapping, JTBD capture.</li>
+        <li>Define: MVP scope (AI itinerary generator, booking links, multi-stop optimisation).</li>
+        <li>Prototype: low → high fidelity in Figma; PoC Colab to validate AI prompts.</li>
+        <li>Metrics & guardrails: time-to-plan, % bookings, NPS; privacy & rate limit considerations for third-party APIs.</li>
+      </ol>
+
+      <h3 style="margin-top:10px">Key outcomes (expected / goal)</h3>
+      <ul class="muted">
+        <li>Goal: reduce planning time by 70% for multi-stop itineraries.</li>
+        <li>Goal: convert 3–5% of users to booking flows within 14 days.</li>
+        <li>Baseline and experiment plan included in deck to measure impact post-launch.</li>
+      </ul>
+
+      <h3 style="margin-top:10px">Artifacts</h3>
+      <p class="muted">
+        <a class="link" href="files/TravelCoPilot_Full_Deck_DeepikaSeshaiah.pdf" target="_blank">Download full deck (PDF)</a> •
+        Figma prototype: <a id="figma-1" class="link" href="#" target="_blank">paste Figma URL here</a>.
+      </p>
+    </section>
+
+    <aside style="margin-top:12px" class="section">
+      <h3>Notes to reviewers</h3>
+      <p class="muted">The deck contains links to prototypes (see pages referenced in the deck). If you want a one-click live demo, paste the Figma prototype URL into the Figma prototype field above.</p>
+    </aside>
+
+    <footer style="margin-top:14px" class="muted">© <span id="yr"></span> — TravelCoPilot case study</footer>
+  </div>
+
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
