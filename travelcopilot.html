@@ -1,66 +1,73 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>TravelCoPilot — Case Study — Deepika Seshaiah</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TravelCoPilot — Case Study</title>
+  <meta name="description" content="TravelCoPilot case study by Deepika" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <style> :root{--bg:#071428;--card:#0f1724;--muted:#98a1ad;--accent:#7dd3fc} html,body{margin:0;font-family:Inter,system-ui;color:#eaf6ff;background:linear-gradient(180deg,#071022,#071428)} .wrap{max-width:980px;margin:28px auto;padding:18px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01))} h1{margin:0} .muted{color:var(--muted)} .section{background:var(--card);padding:14px;border-radius:10px;margin-top:12px} a.link{color:var(--accent);text-decoration:underline} .meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px} .grid{display:grid;grid-template-columns:1fr 320px;gap:12px}@media(max-width:900px){.grid{grid-template-columns:1fr}}</style>
+  <link rel="icon" href="favicon.ico" />
+  <meta property="og:title" content="Deepika Seshaiah — Product Manager (transitioning from QA)" />
+  <meta property="og:description" content="Product Manager transitioning from 7 years in QA, automation and product work. Case studies: TravelCoPilot, HireMate, SubSentry." />
+  <meta property="og:image" content="files/og-image.png" />
+  <meta property="og:url" content="https://deepikaseshaiah94.github.io/deepikaseshaiah-portfolio/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <div class="wrap">
-    <a class="link" href="index.html">← Back to portfolio</a>
-    <h1>TravelCoPilot — AI Travel Planner</h1>
-    <div class="meta muted">Role: Product Lead (concept → PRD → prototype) • Timeline: 8 weeks • Artifacts: Deck + Figma prototypes.</div>
 
-    <section class="section">
-      <h2>Problem</h2>
-      <p class="muted">Travel planning is fragmented: users spend hours coordinating routes, budgets, and preferences across multiple tools. TravelCoPilot aims to provide a single assistant to plan, optimise and book multi-stop trips using AI orchestration.</p>
+  <div class="container">
+    <header class="site-header">
+      <div class="brand"><div class="logo">DS</div><div class="title"><h1>TravelCoPilot</h1><p class="small-muted">AI Travel Planner — case study</p></div></div>
+      <nav class="nav"><a href="index.html">Home</a><a href="hiremate.html">HireMate</a><a href="subsentry.html">SubSentry</a><a class="cta" href="files/TravelCoPilot_Full_Deck_DeepikaSeshaiah.pdf" target="_blank">Download Deck</a></nav>
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+    </header>
 
-      <h3 style="margin-top:10px">Target users</h3>
-      <ul class="muted">
-        <li>Frequent travelers who value time saving</li>
-        <li>Leisure planners who want curated itineraries</li>
-        <li>Budget-conscious travelers who require cost-aware plans</li>
-      </ul>
+    <main class="main">
+      <section>
+        <div class="card reveal">
+          <h2>Problem</h2>
+          <p class="small-muted">Travel planning is fragmented: users spend hours coordinating routes, budgets, and preferences across multiple tools. TravelCoPilot provides a single assistant to plan, optimise and book multi-stop trips using AI orchestration.</p>
 
-      <h3 style="margin-top:10px">My contributions</h3>
-      <ul class="muted">
-        <li>Led product definition and roadmap, prioritized features using RICE.</li>
-        <li>Created user journeys, wireflows, and success metrics (time-to-plan, conversion, retention).</li>
-        <li>Defined technical orchestration for AI + 3rd-party APIs and documented Colab proof-of-concept.</li>
-        <li>Built prototype requirements and connected Figma links in the deck for stakeholder reviews.</li>
-      </ul>
+          <h3 style="margin-top:10px">Approach</h3>
+          <ol class="small-muted">
+            <li>Discovery: interviews, pain mapping, JTBD.</li>
+            <li>Definition: MVP scope and success metrics.</li>
+            <li>Prototype: Figma & PoC Colab for AI prompts.</li>
+            <li>Measure: time-to-plan, bookings, retention.</li>
+          </ol>
 
-      <h3 style="margin-top:10px">Approach / Execution</h3>
-      <ol class="muted">
-        <li>Discovery: interviews, pain-point mapping, JTBD capture.</li>
-        <li>Define: MVP scope (AI itinerary generator, booking links, multi-stop optimisation).</li>
-        <li>Prototype: low → high fidelity in Figma; PoC Colab to validate AI prompts.</li>
-        <li>Metrics & guardrails: time-to-plan, % bookings, NPS; privacy & rate limit considerations for third-party APIs.</li>
-      </ol>
+          <h3 style="margin-top:10px">Artifacts & Prototypes</h3>
+          <p class="small-muted"><a class="link" href="files/TravelCoPilot_Full_Deck_DeepikaSeshaiah.pdf" target="_blank">Download full deck (PDF)</a></p>
 
-      <h3 style="margin-top:10px">Key outcomes (expected / goal)</h3>
-      <ul class="muted">
-        <li>Goal: reduce planning time by 70% for multi-stop itineraries.</li>
-        <li>Goal: convert 3–5% of users to booking flows within 14 days.</li>
-        <li>Baseline and experiment plan included in deck to measure impact post-launch.</li>
-      </ul>
+          <div style="margin-top:8px">
+            <ul class="small-muted">
+              <li>Low-Fidelity Wireframe: <a class="link" href="https://stitch.withgoogle.com/projects/10943748558287587382" target="_blank">Stitch</a></li>
+              <li>High-Fidelity (Base44): <a class="link" href="https://travel-co-pilot-2e2eb83a.base44.app" target="_blank">Base44 preview</a></li>
+              <li>High-Fidelity (Figma): <a class="link" href="https://www.figma.com/make/kEr6UfQbMuCeFsiUOHiEm1/TravelCoPilot-App-Wireframe?node-id=0-4&t=ETQAPPVB7zknd0es-1" target="_blank">Figma</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-      <h3 style="margin-top:10px">Artifacts</h3>
-      <p class="muted">
-        <a class="link" href="files/TravelCoPilot_Full_Deck_DeepikaSeshaiah.pdf" target="_blank">Download full deck (PDF)</a> •
-        Figma prototype: <a id="figma-1" class="link" href="#" target="_blank">paste Figma URL here</a>.
-      </p>
-    </section>
+      <aside>
+        <div class="card">
+          <h4>Impact goals</h4>
+          <ul class="small-muted">
+            <li>Reduce planning time by 70% for multi-stop trips</li>
+            <li>3–5% booking conversion within 14 days</li>
+          </ul>
+          <div style="margin-top:10px"><a class="cta" href="files/TravelCoPilot_Full_Deck_DeepikaSeshaiah.pdf" target="_blank">Open Deck</a></div>
+        </div>
+      </aside>
+    </main>
 
-    <aside style="margin-top:12px" class="section">
-      <h3>Notes to reviewers</h3>
-      <p class="muted">The deck contains links to prototypes (see pages referenced in the deck). If you want a one-click live demo, paste the Figma prototype URL into the Figma prototype field above.</p>
-    </aside>
-
-    <footer style="margin-top:14px" class="muted">© <span id="yr"></span> — TravelCoPilot case study</footer>
+    <footer class="footer">© 2025 — TravelCoPilot case study</footer>
   </div>
 
-  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+  <script>
+    function toggleMenu(){ const nav = document.querySelector('.nav'); if(nav.style.display === 'flex') nav.style.display = 'none'; else nav.style.display = 'flex'; }
+  </script>
+
 </body>
 </html>
