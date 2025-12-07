@@ -1,41 +1,61 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>SubSentry — Case Study — Deepika Seshaiah</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SubSentry — Case Study</title>
+  <meta name="description" content="SubSentry PRD by Deepika" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <style> :root{--bg:#071428;--card:#0f1724;--muted:#98a1ad;--accent:#7dd3fc} html,body{margin:0;font-family:Inter,system-ui;color:#eaf6ff;background:linear-gradient(180deg,#071022,#071428)} .wrap{max-width:980px;margin:28px auto;padding:18px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01))} h1{margin:0} .muted{color:var(--muted)} a.link{color:var(--accent);text-decoration:underline}</style>
+  <link rel="icon" href="favicon.ico" />
+  <meta property="og:title" content="Deepika Seshaiah — Product Manager (transitioning from QA)" />
+  <meta property="og:description" content="Product Manager transitioning from 7 years in QA, automation and product work. Case studies: TravelCoPilot, HireMate, SubSentry." />
+  <meta property="og:image" content="files/og-image.png" />
+  <meta property="og:url" content="https://deepikaseshaiah94.github.io/deepikaseshaiah-portfolio/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <div class="wrap">
-    <a class="link" href="index.html">← Back to portfolio</a>
-    <h1>SubSentry — Subscription Management (PRD)</h1>
-    <div class="muted">Role: Product Owner (PRD & UX flows) • Timeline: 4–6 weeks • Artifact: PRD and wireflows.</div>
 
-    <section style="background:#0f1724;padding:14px;border-radius:10px;margin-top:12px">
-      <h2>Problem</h2>
-      <p class="muted">Users lose track of recurring payments, face surprise charges, and lack a simple dashboard to manage subscriptions across services. SubSentry provides a clear dashboard, reminders, and retention-centric flows to reduce churn and save users money.</p>
+  <div class="container">
+    <header class="site-header">
+      <div class="brand"><div class="logo">DS</div><div class="title"><h1>SubSentry</h1><p class="small-muted">Subscription Management — PRD</p></div></div>
+      <nav class="nav"><a href="index.html">Home</a><a href="travelcopilot.html">TravelCoPilot</a><a href="hiremate.html">HireMate</a><a class="cta" href="files/SubSentry_PRD_DeepikaSeshaiah.pdf" target="_blank">Download PRD</a></nav>
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+    </header>
 
-      <h3 style="margin-top:10px">My contributions</h3>
-      <ul class="muted">
-        <li>Authored PRD: core flows (dashboard, manual entry, reminders), success metrics and onboarding funnel.</li>
-        <li>Defined retention experiments and notification cadence to reduce subscription churn.</li>
-        <li>Designed quick-entry UX to reduce time-to-first-value and validated with simple usability checks.</li>
-      </ul>
+    <main class="main">
+      <section>
+        <div class="card reveal">
+          <h2>Problem</h2>
+          <p class="small-muted">Users lose track of recurring payments and face surprise charges. SubSentry provides a dashboard, reminders, and retention flows to manage subscriptions across services.</p>
 
-      <h3 style="margin-top:10px">Success metrics</h3>
-      <ul class="muted">
-        <li>Time-to-first-value (add first subscription) &lt; 3 minutes (MVP goal).</li>
-        <li>Weekly active users and reminder-driven retention &gt; 20% after 30 days (experiment goal).</li>
-      </ul>
+          <h3 style="margin-top:10px">Contributions</h3>
+          <ul class="small-muted">
+            <li>Authored PRD: core flows and onboarding</li>
+            <li>Retention experiments and notification cadence</li>
+            <li>Quick-entry UX for time-to-first-value</li>
+          </ul>
 
-      <h3 style="margin-top:10px">Artifacts</h3>
-      <p class="muted"><a class="link" href="files/SubSentry_PRD_DeepikaSeshaiah.pdf" target="_blank">Open SubSentry PRD (PDF)</a>.</p>
-    </section>
+          <h3 style="margin-top:10px">Prototype</h3>
+          <p class="small-muted">Live SubSentry Preview: <a class="link" href="https://subsentry-track-hub.lovable.app/" target="_blank">Open SubSentry Live Preview</a></p>
+        </div>
+      </section>
 
-    <footer style="margin-top:12px" class="muted">© <span id="yr3"></span> — SubSentry case study</footer>
+      <aside>
+        <div class="card">
+          <h4>Success metrics</h4>
+          <ul class="small-muted">
+            <li>Time-to-first-value &lt; 3 mins (MVP)</li>
+            <li>Weekly active users &gt; 20% after 30 days (experiment)</li>
+          </ul>
+          <div style="margin-top:10px"><a class="cta" href="files/SubSentry_PRD_DeepikaSeshaiah.pdf" target="_blank">Open PRD</a></div>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="footer">© 2025 — SubSentry case study</footer>
   </div>
+  <script>function toggleMenu(){ const nav = document.querySelector('.nav'); if(nav.style.display === 'flex') nav.style.display = 'none'; else nav.style.display = 'flex'; }</script>
 
-  <script>document.getElementById('yr3').textContent = new Date().getFullYear();</script>
 </body>
 </html>
